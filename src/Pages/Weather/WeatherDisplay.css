@@ -1,0 +1,251 @@
+.display1 {
+    height: 100% !important;
+}
+.main {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    background: url();
+    background-image: url(https://wallpaperaccess.com/full/1540001.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(50px) !important;
+}
+
+
+.display {
+    min-width:250px;
+    max-width: 900px;
+    height: 80vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    backdrop-filter: blur(20px);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.display:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f, 0px 0px 50px 10px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.display1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+
+.card1 {
+    min-width: 250px;
+    min-height: 400px;
+    color: #000000;
+    text-shadow: 0 0 5px #ffffff;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+}
+
+.card1::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid #ff5900;
+    border-left: 10px solid #ff5900;
+    top: -20px;
+    left: -20px;
+    border-radius: 10px;
+}
+
+.card1::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid #ff5900;
+    border-right: 10px solid #ff5900;
+    bottom: -20px;
+    right: -20px;
+    border-radius: 10px;
+}
+
+.card1:hover {
+    color: white !important;
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.741);
+    box-shadow: 0px 0px 20px 1px #ffbb763f, 0px 0px 50px 10px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.card1 .card-title h3 {
+    font-weight: 600;
+    border-bottom: 2px solid #5d5c5c;
+    padding-bottom: 1rem;
+}
+
+.card-body1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-body1 label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-body2 label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-body1 .select {
+    font-size: clamp(0.7rem, 4vw, 0.8rem);
+    outline: none;
+    width: 200px !important;
+    max-width: 300px !important;
+    border-radius: 4px;
+    transition: all ease 0.1s;
+    border: 3px solid #fafafa;
+}
+
+.card-body1 .select {
+    --bs-focus-ring-color: rgba(255, 255, 255, 0.454)
+}
+
+.card-body2 .select {
+    outline: none;
+    font-size: clamp(0.7rem, 4vw, 0.8rem);
+    width: 200px !important;
+    max-width: 300px !important;
+    border-radius: 4px;
+    transition: all ease 0.1s;
+    border: 3px solid #fafafa;
+}
+
+.card-body2 .select {
+    --bs-focus-ring-color: rgba(255, 255, 255, 0.454)
+}
+
+/* Card Button Style  */
+.search-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    color: white;
+    background-color: #222;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    width: 200px;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+.button img {
+    display: inline;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.75rem;
+}
+
+.button:focus img {
+    animation: spin_357 0.5s linear;
+}
+
+.button:active {
+    scale: 0.96;
+}
+
+@keyframes spin_357 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* RESPONSIVE DESIGN  */
+@media (max-width:992px) {
+    .display1 {
+        margin: 0 auto;
+        padding: 2rem 5rem;
+        flex-basis: 100%;
+        height: 100% !important;
+    }
+
+    .display {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 2rem 5rem;
+        flex-basis: 100%;
+        width: 155%;
+        height: 80vh !important;
+    }
+
+}
+
+@media (max-width:769px) {
+    .display1 {
+        /* margin-left: 1.5rem !important; */
+        padding: 0 !important;
+        flex-basis: 90%;
+        width: 10% !important;
+        height: 100% !important;
+    }
+
+    .display {
+        margin-right: 5rem !important;
+    }
+
+}
+
+@media (max-width:455px) {
+
+    .card-body1,
+    .card-body2 {
+        flex-flow: column wrap;
+    }
+
+    .card-body2,
+    .card-body1 label {
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    .card-body1,
+    .card-body2 {
+        flex-flow: column wrap;
+    }
+}

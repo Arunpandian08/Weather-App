@@ -1,0 +1,127 @@
+.landing {
+    margin: 0 auto !important;
+    padding: 0;
+    height: 100vh;
+    display: flex !important;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+.title-container{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.title-container span {
+    color: #ff5900;
+    letter-spacing: 0.1em;
+    font-size: clamp(2.5rem, 4vw, 5rem);
+    font-weight: bold;
+    font-family: Pacifico;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.title-container h1 {
+    margin-bottom: 0 !important;
+    padding-right: 1rem;
+    color: black;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.desc>.text {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.5rem;
+    text-shadow: none;
+    margin: 0 auto;
+}
+
+.desc .sub-title {
+    color: #000000;
+    font-weight: 600;
+
+    span {
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: #ff5900;
+        text-shadow: 0 0 8px #ffffff;
+    }
+}
+
+/* Button css  */
+.button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1rem; */
+}
+
+.btn-1 {
+    --color: #ff5900;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-1 div {
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: var(--color);
+    border-radius: 2rem;
+    color: #000000;
+    padding: 1rem;
+}
+
+.btn-1::before {
+    content: '';
+    z-index: -1;
+    background-color: var(--color);
+    border: 2px solid white;
+    border-radius: 2rem;
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    transform: rotate(10deg);
+    transition: .5s;
+    opacity: 0.2;
+}
+
+.btn-1:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+.btn-1:hover::before {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+.btn-1 img {
+    transform: translateX(-200%);
+    transition: .5s;
+    width: 0;
+    opacity: 0;
+}
+
+.btn-1:hover img {
+    width: 25px;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.btn-1:active {
+    filter: brightness(1.4);
+}
+
+@media (max-width:539px) {
+    .title-container{
+        flex-flow: column wrap !important;
+    }
+    .title-container img{
+        width: 150px;
+        height: 100px;
+    }
+}

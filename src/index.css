@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#root {
+    min-width: 50%;
+    width: 100% !important;
+}
+
+body {
+    max-width: 100%;
+    width: 100% !important;
+    min-height: 100vh;
+    height: 100%;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style for the container with scrollbar */
+.scroll-container {
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    scrollbar-width: 50px;
+    /* Firefox support */
+    scrollbar-color: #000000 #ffffff;
+    /* Firefox support */
+    height: 100vh;
+    /* Set a fixed height for the container */
+    scroll-behavior: smooth;
+}
+
+/* Style for the scrollbar thumb */
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    /* Color of the thumb */
+    border-radius: 5px;
+}
+
+/* Style for the scrollbar track */
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+    /* Color of the track */
+}
