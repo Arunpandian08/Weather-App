@@ -36,7 +36,7 @@ const WeatherProvider = ({ children }) => {
     const getWeather = async () => {
         if (selectedCity) {
             try {
-                const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=9d8804813ca1496a92562425241705&q=${selectedCountry}`);
+                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=9d8804813ca1496a92562425241705&q=${selectedCountry}`);
                 setWeatherData(response.data);
             } catch (error) {
                 console.error('Error fetching weather data:', error);
