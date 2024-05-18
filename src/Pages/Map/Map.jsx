@@ -72,7 +72,7 @@ const Map = () => {
             if (selectedCity) {
                 setLoading(true);
                 try {
-                    const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=9d8804813ca1496a92562425241705&q=${selectedCity}`);
+                    const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=9d8804813ca1496a92562425241705&q=${selectedCity}`);
                     if (response.data && response.data.location) {
                         setWeatherData(response.data);
                     } else {
