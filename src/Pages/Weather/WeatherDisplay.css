@@ -1,6 +1,7 @@
 .display1 {
     height: 100% !important;
 }
+
 .main {
     max-width: 100%;
     padding-left: 1rem;
@@ -12,11 +13,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(50px) !important;
+    border-image: fill 0 linear-gradient(#0003, #000);
 }
 
 
 .display {
-    min-width:250px;
+    min-width: 250px;
     max-width: 900px;
     height: 80vh !important;
     display: flex;
@@ -47,10 +49,11 @@
 .card1 {
     min-width: 250px;
     min-height: 400px;
-    color: #000000;
+    color: white !important;
     text-shadow: 0 0 5px #ffffff;
-    background-color: rgba(255, 255, 255, 0.074);
-    border: 1px solid rgba(255, 255, 255, 0.222);
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.741);
+    border: 1px solid rgba(255, 255, 255, 0.454);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 0.7rem;
@@ -62,10 +65,10 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    border-top: 10px solid #ff5900;
-    border-left: 10px solid #ff5900;
-    top: -20px;
-    left: -20px;
+    border-top: 20px solid #ff5900;
+    border-left: 20px solid #ff5900;
+    top: -30px;
+    left: -30px;
     border-radius: 10px;
 }
 
@@ -74,17 +77,14 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    border-bottom: 10px solid #ff5900;
-    border-right: 10px solid #ff5900;
-    bottom: -20px;
-    right: -20px;
+    border-bottom: 20px solid #ff5900;
+    border-right: 20px solid #ff5900;
+    bottom: -30px;
+    right: -30px;
     border-radius: 10px;
 }
 
 .card1:hover {
-    color: white !important;
-    text-shadow: none;
-    background: rgba(0, 0, 0, 0.741);
     box-shadow: 0px 0px 20px 1px #ffbb763f, 0px 0px 50px 10px #ffbb763f;
     border: 1px solid rgba(255, 255, 255, 0.454);
 }
@@ -216,7 +216,6 @@
 
 @media (max-width:769px) {
     .display1 {
-        /* margin-left: 1.5rem !important; */
         padding: 0 !important;
         flex-basis: 90%;
         width: 10% !important;
@@ -240,6 +239,21 @@
     .card-body1 label {
         margin-right: 0 !important;
     }
+
+    .card1::before {
+        border-top: 10px solid #ff5900;
+        border-left: 10px solid #ff5900;
+        top: -20px;
+        left: -20px;
+    }
+
+    .card1::after {
+        border-bottom: 10px solid #ff5900;
+        border-right: 10px solid #ff5900;
+        bottom: -20px;
+        right: -20px;
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {

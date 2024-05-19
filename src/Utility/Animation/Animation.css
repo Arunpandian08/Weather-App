@@ -7,6 +7,7 @@
     z-index: -1;
     background: linear-gradient(334deg, #00b7ff, #ff5900);
     background-size: 200% 200%;
+    border-image: fill 0 linear-gradient(#0003,#000000c0);
     animation: gradient-animation 6s ease infinite;
 }
 
