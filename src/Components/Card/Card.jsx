@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Card.css';
-import { useWeatherContext } from '../../Context/WeatherProvider';
+import { WeatherContext } from '../../Context/WeatherProvider';
 import cloud from '../../assets/lightcloud-svgrepo-com.svg'
 
 const Card = () => {
-    const { flagURL, selectedCountry, weatherData } = useWeatherContext()
+    const { flagURL, selectedCountry, weatherData } = useContext(WeatherContext)
     return (
         <div className='container card-page'>
             <div className="card text-center h-100">

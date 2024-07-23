@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './WeatherDisplay.css';
 import Search from '../../assets/search.svg';
-import { useWeatherContext } from '../../Context/WeatherProvider.jsx';
+import { WeatherContext } from '../../Context/WeatherProvider.jsx';
 import Card from '../../Components/Card/Card.jsx';
 import Navbar from '../../Components/Navbar/Navbar.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
@@ -15,7 +15,7 @@ const WeatherDisplay = () => {
         setSelectedCity,
         setFlagURL,
         getWeather,
-    } = useWeatherContext();
+    } = useContext(WeatherContext);
 
     const handleCountryChange = (e) => {
         const selected = e.target.value;

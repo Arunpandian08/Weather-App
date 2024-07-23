@@ -1,9 +1,7 @@
 import axios from 'axios';
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 
-const WeatherContext = createContext()
-
-export const useWeatherContext = () => useContext(WeatherContext)
+export const WeatherContext = createContext()
 
 const WeatherProvider = ({ children }) => {
     const [countries, setCountries] = useState([])
